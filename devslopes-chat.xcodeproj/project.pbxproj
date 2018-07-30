@@ -12,6 +12,8 @@
 		A9F51C1E210EFEBF00A3CC47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F51C1C210EFEBF00A3CC47 /* Main.storyboard */; };
 		A9F51C20210EFEC100A3CC47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F51C1F210EFEC100A3CC47 /* Assets.xcassets */; };
 		A9F51C23210EFEC100A3CC47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F51C21210EFEC100A3CC47 /* LaunchScreen.storyboard */; };
+		A9F51C2B210F44A900A3CC47 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9F51C2A210F44A900A3CC47 /* GoogleService-Info.plist */; };
+		A9F51C31210F9C8B00A3CC47 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F51C30210F9C8B00A3CC47 /* AuthService.swift */; };
 		C8359F7C1381180D22A5993B /* Pods_devslopes_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2040A62C40AC81166652D2 /* Pods_devslopes_chat.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		A9F51C1F210EFEC100A3CC47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9F51C22210EFEC100A3CC47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9F51C24210EFEC100A3CC47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9F51C2A210F44A900A3CC47 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A9F51C30210F9C8B00A3CC47 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +69,44 @@
 				A9F51C1A210EFEBF00A3CC47 /* ViewController.swift */,
 				A9F51C1C210EFEBF00A3CC47 /* Main.storyboard */,
 				A9F51C1F210EFEC100A3CC47 /* Assets.xcassets */,
+				A9F51C2F210F93FF00A3CC47 /* Model */,
+				A9F51C2E210F93F300A3CC47 /* Controller */,
+				A9F51C2D210F93EC00A3CC47 /* View */,
+				A9F51C2C210F93E100A3CC47 /* Services */,
 				A9F51C21210EFEC100A3CC47 /* LaunchScreen.storyboard */,
 				A9F51C24210EFEC100A3CC47 /* Info.plist */,
+				A9F51C2A210F44A900A3CC47 /* GoogleService-Info.plist */,
 			);
 			path = "devslopes-chat";
+			sourceTree = "<group>";
+		};
+		A9F51C2C210F93E100A3CC47 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A9F51C30210F9C8B00A3CC47 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A9F51C2D210F93EC00A3CC47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9F51C2E210F93F300A3CC47 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A9F51C2F210F93FF00A3CC47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B47EEEB83E679506F2FDD4A9 /* Frameworks */ = {
@@ -150,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9F51C23210EFEC100A3CC47 /* LaunchScreen.storyboard in Resources */,
+				A9F51C2B210F44A900A3CC47 /* GoogleService-Info.plist in Resources */,
 				A9F51C20210EFEC100A3CC47 /* Assets.xcassets in Resources */,
 				A9F51C1E210EFEBF00A3CC47 /* Main.storyboard in Resources */,
 			);
@@ -223,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9F51C1B210EFEBF00A3CC47 /* ViewController.swift in Sources */,
+				A9F51C31210F9C8B00A3CC47 /* AuthService.swift in Sources */,
 				A9F51C19210EFEBF00A3CC47 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +411,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UBDP9T662;
 				INFOPLIST_FILE = "devslopes-chat/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "KKi.devslopes-chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -387,7 +430,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UBDP9T662;
 				INFOPLIST_FILE = "devslopes-chat/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "KKi.devslopes-chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
