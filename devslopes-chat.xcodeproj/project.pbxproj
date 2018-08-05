@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A996CE91211704280034988D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996CE90211704280034988D /* DataService.swift */; };
+		A996CE93211755FA0034988D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996CE92211755FA0034988D /* Message.swift */; };
 		A9F51C19210EFEBF00A3CC47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F51C18210EFEBF00A3CC47 /* AppDelegate.swift */; };
 		A9F51C1B210EFEBF00A3CC47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F51C1A210EFEBF00A3CC47 /* ViewController.swift */; };
 		A9F51C1E210EFEBF00A3CC47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F51C1C210EFEBF00A3CC47 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 		1D2040A62C40AC81166652D2 /* Pods_devslopes_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_devslopes_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F17AB8F0C864DD9F7875D7B /* Pods-devslopes-chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devslopes-chat/Pods-devslopes-chat.debug.xcconfig"; sourceTree = "<group>"; };
 		8B66DDE4048FF330A53485B9 /* Pods-devslopes-chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-devslopes-chat/Pods-devslopes-chat.release.xcconfig"; sourceTree = "<group>"; };
+		A996CE90211704280034988D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		A996CE92211755FA0034988D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		A9F51C15210EFEBF00A3CC47 /* devslopes-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "devslopes-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F51C18210EFEBF00A3CC47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9F51C1A210EFEBF00A3CC47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				A9F51C18210EFEBF00A3CC47 /* AppDelegate.swift */,
-				A9F51C1A210EFEBF00A3CC47 /* ViewController.swift */,
 				A9F51C1C210EFEBF00A3CC47 /* Main.storyboard */,
 				A9F51C1F210EFEC100A3CC47 /* Assets.xcassets */,
 				A9F51C2F210F93FF00A3CC47 /* Model */,
@@ -84,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				A9F51C30210F9C8B00A3CC47 /* AuthService.swift */,
+				A996CE90211704280034988D /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -98,6 +102,7 @@
 		A9F51C2E210F93F300A3CC47 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A9F51C1A210EFEBF00A3CC47 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 		A9F51C2F210F93FF00A3CC47 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A996CE92211755FA0034988D /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,7 +269,9 @@
 			files = (
 				A9F51C1B210EFEBF00A3CC47 /* ViewController.swift in Sources */,
 				A9F51C31210F9C8B00A3CC47 /* AuthService.swift in Sources */,
+				A996CE93211755FA0034988D /* Message.swift in Sources */,
 				A9F51C19210EFEBF00A3CC47 /* AppDelegate.swift in Sources */,
+				A996CE91211704280034988D /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
